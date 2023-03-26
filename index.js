@@ -15,14 +15,22 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
             phone,
          });
          return console.log(add);
+      case 'remove':
+         const remove = await contacts.removeContact(id);
+         return console.log(remove);
+
+      default:
+         console.warn('\x1B[31m Unknown action type!');
    }
 };
 
 // invokeAction({ action: 'list' });
 // invokeAction({ action: 'get' ,id:'AeHIrLTr6JkxGE6SN-0Rw'});
-invokeAction({
-   action: 'add',
-   name: 'Oleg',
-   email: 'oleg@compileFunction.ua',
-   phone: '398-235-89',
-});
+// invokeAction({
+//    action: 'add1',
+//    name: 'Oleg',
+//    email: 'oleg@compileFunction.ua',
+//    phone: '398-235-89',
+// });
+
+invokeAction({ action: 'remove', id: 'drsAJ4SHPYqZeG-83QTVW' });
