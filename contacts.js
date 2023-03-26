@@ -8,5 +8,11 @@ const listContacts = async () => {
     return JSON.parse(contacts)
 }
 
+const getContactById = async (contactId) => {
+    const contacts = await listContacts();
+    const result = contacts.find(item => item.id === contactId);
+    return result || null;
+}
 
-module.exports = {listContacts};
+
+module.exports = {listContacts,getContactById};
