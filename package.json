@@ -1,0 +1,35 @@
+{
+  "name": "contacts-cli",
+  "version": "1.0.0",
+  "description": "CLI \u0016Application for working with the Contacts file",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/go-doc-web/node-contacts-cli.git"
+  },
+  "keywords": [
+    "node.js",
+    "file",
+    "system",
+    "path",
+    "process",
+    "commander",
+    "nodemon"
+  ],
+  "author": "Oleh Hubskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/go-doc-web/node-contacts-cli/issues"
+  },
+  "homepage": "https://github.com/go-doc-web/node-contacts-cli#readme",
+  "dependencies": {
+    "commander": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
